@@ -55,10 +55,6 @@ const Header = () => {
           <Icon id="menu" />
           <VisuallyHidden>
             Open Menu
-          <VisuallyHidden>
-            Search
-          </VisuallyHidden>
-
           </VisuallyHidden>
         </UnstyledButton>
       </MobileHeader>
