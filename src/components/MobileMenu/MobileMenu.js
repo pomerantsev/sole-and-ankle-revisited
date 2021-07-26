@@ -66,7 +66,7 @@ const MobileMenuOverlay = styled(DialogOverlay)`
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: ${COLORS.gray[900]};
+    background-color: var(--color-gray-900);
     opacity: 0.8;
   }
 `;
@@ -80,7 +80,7 @@ const MobileMenuContent = styled(DialogContent)`
 
   padding: 32px;
 
-  background-color: ${COLORS.white};
+  background-color: var(--color-white);
 
   display: flex;
   flex-direction: column;
@@ -110,16 +110,16 @@ const Nav = styled.nav`
   gap: ${16 / 16}rem;
 
   font-size: ${18 / 16}rem;
-  font-weight: ${WEIGHTS.medium};
+  font-weight: var(--font-weight-medium);
   text-transform: uppercase;
 
   & > a {
-    color: ${COLORS.gray[900]};
+    color: var(--color-gray-900);
     text-decoration: none;
 
     @media (hover: hover) {
       &:hover {
-        color: ${COLORS.secondary};
+        color: var(--color-secondary);
       }
     }
   }
@@ -135,10 +135,10 @@ const Footer = styled.footer`
   gap: ${8 / 16}rem;
 
   font-size: ${14 / 16}rem;
-  font-weight: ${WEIGHTS.normal};
+  font-weight: var(--font-weight-normal);
 
   & > a {
-    color: ${COLORS.gray[700]};
+    color: var(--color-gray-700);
     text-decoration: none;
 
     @media (hover: hover) {

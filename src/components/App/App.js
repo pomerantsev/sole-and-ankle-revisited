@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
+import GlobalStyles from './GlobalStyles';
+
 import { QUERIES } from '../../constants';
 import Header from '../Header';
 import ShoeIndex from '../ShoeIndex';
@@ -14,6 +16,8 @@ const App = () => {
       <Main>
         <ShoeIndex sortId={sortId} setSortId={setSortId} />
       </Main>
+
+      <GlobalStyles />
     </>
   );
 };
