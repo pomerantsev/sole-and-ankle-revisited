@@ -87,8 +87,8 @@ const SuperHeaderWrapper = styled.div`
 
 const BaseHeader = styled.div`
   padding: 18px 32px;
-  height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  overflow-x: auto;
 
   @media ${QUERIES.phoneAndDown} {
     padding-left: 16px;
@@ -125,8 +125,14 @@ const MobileHeader = styled(BaseHeader)`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(
+    16px,
+    6vw - 44px,
+    48px
+  );
   margin: 0px 48px;
+
+  white-space: nowrap;
 `;
 
 const Side = styled.div`
